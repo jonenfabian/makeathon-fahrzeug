@@ -35,7 +35,7 @@ eines anderen Teams.
 
 | Idee | Ergebnis | Voraussetzung |
 | --- | --- | --- |
-| LED-Anzeige | Zustand, Richtung oder Abstand mit den LED-Streifen zeigen | LED-Bonus in der [Oberdeck-Bildanleitung](FollowMe_Oberdeck_Bildanleitung.pdf) |
+| LED-Anzeige | Zustand, Richtung oder Abstand mit den LED-Streifen zeigen | LED-Bonus in der [Oberdeck-Bildanleitung](Oberdeck_Bildanleitung.pdf) |
 | Hindernis umfahren oder an einer Wand entlangfahren | Seitlich messen und ausweichen | Freiwillige Zusatzoption Ultraschall, siehe Aufgabenblatt. Sensoren bei der Orga |
 
 ## Mit einem Coding Agent arbeiten

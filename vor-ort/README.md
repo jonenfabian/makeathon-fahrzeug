@@ -9,7 +9,7 @@ eine eigene Aufgabe.
 
 | Schritt | Unterlage |
 | --- | --- |
-| 1 Oberdeck aufbauen und ersten Fahrtest machen | [Oberdeck-Bildanleitung](FollowMe_Oberdeck_Bildanleitung.pdf) |
+| 1 Oberdeck aufbauen und ersten Fahrtest machen | [Oberdeck-Bildanleitung](Oberdeck_Bildanleitung.pdf) |
 | 2 Von der Simulation zum echten Fahrzeug | [Startkarte Fahrzeug](startkarte-fahrzeug.md) |
 | 3 Grundaufgaben und eine Erweiterung | [Aufgabenblatt Fahrzeug](aufgabenblatt-fahrzeug.md) |
 | 4 Eigene Ideen | [Ideen für Erweiterungen](ideen.md) |

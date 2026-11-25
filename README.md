@@ -1,6 +1,6 @@
-# Makeathon Fahrzeug: Follow-Me
+# Makeathon Fahrzeug
 
-Das Follow-Me-Fahrzeug auf dem eigenen Rechner ausprobieren, Python-Code ändern und das Ergebnis
+Das Fahrzeug auf dem eigenen Rechner ausprobieren, Python-Code ändern und das Ergebnis
 in einer 3D-Simulation ansehen. Danach läuft derselbe Code auf dem echten Fahrzeug. Ihr braucht
 **Git, Python ab 3.10 und einen Browser**. Wir empfehlen Python 3.11. Die Bedienoberfläche läuft lokal.
 
@@ -59,7 +59,7 @@ Start lädt die Aufgabendatei neu.
 
 - [Leitseite vor Ort](vor-ort/README.md) mit Startkarte und Aufgabenblatt. Die Startkarte erklärt den
   Übergang von der Simulation zum echten Fahrzeug.
-- [Oberdeck-Bildanleitung](vor-ort/FollowMe_Oberdeck_Bildanleitung.pdf): die Bauteile, die ihr selbst montiert,
+- [Oberdeck-Bildanleitung](vor-ort/Oberdeck_Bildanleitung.pdf): die Bauteile, die ihr selbst montiert,
   und der erste Fahrtest.
 - [Ideen für eigene Erweiterungen](vor-ort/ideen.md), auch zum Umsetzen mit einem Coding Agent.
 - [`AGENTS.md`](AGENTS.md): Kurzbeschreibung des Repositorys und der Schnittstellen für Coding Agents.
@@ -88,5 +88,5 @@ Gerät statt. Das Repository enthält keine Zugangsdaten zu echten Geräten.
 ## Lizenzen
 
 Die Lizenztexte fremder Dateien (three.js, Modelle) liegen direkt neben diesen Dateien.
-Für den eigenen Follow-Me-Code wird hier keine zusätzliche Lizenz erteilt. Die bisherigen
+Für den eigenen Fahrzeug-Code wird hier keine zusätzliche Lizenz erteilt. Die bisherigen
 Rechte bleiben erhalten. Die Veröffentlichung ändert bestehende Lizenzbedingungen nicht.

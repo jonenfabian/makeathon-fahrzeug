@@ -1,6 +1,6 @@
-# Hinweise für Coding Agents: Follow-Me-Fahrzeug
+# Hinweise für Coding Agents: Fahrzeug
 
-Dieses Repository ist der Team-Einstieg für das Follow-Me-Fahrzeug beim Makeathon. Die Teams schreiben
+Dieses Repository ist der Team-Einstieg für das Fahrzeug beim Makeathon. Die Teams schreiben
 eine eigene **Aufgabendatei** in Python. Sie läuft in der lokalen Simulation und unverändert auf dem
 Raspberry Pi des echten Fahrzeugs.
 
