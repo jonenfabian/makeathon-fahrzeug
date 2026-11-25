@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Follow-Me · Fahrzeug</title>
+  <link rel="stylesheet" href="/dashboard.css">
+  <script src="/dashboard.js" defer></script>
+</head>
+<body>
+  <header><a class="brand" href="/"><span class="logo">fm</span> Follow-Me <span class="subbrand">Fahrzeug</span></a><span id="backend" class="chip">Verbinden …</span></header>
+  <main>
+    <section class="intro"><div><p class="eyebrow">MAKEATHON ROBOTIKLABOR</p><h1>Dein Code. Dein Fahrzeug.</h1><p>Kamera und Messwerte beobachten. Fahrt bewusst starten und stoppen.</p></div><div class="identity"><span>FAHRZEUG</span><strong id="vehicle">—</strong></div></section>
+    <div class="layout">
+      <section class="camera card" aria-label="Fahrzeugkamera"><div class="card-head"><h2>Durch die Kamera</h2><span id="image-age">Noch kein Bild</span></div><div class="camera-image"><img src="/stream" id="camera" alt="Live-Kamerabild des Fahrzeugs mit erkannten Markern"></div><div class="camera-footer"><span id="markers">Marker werden geladen …</span><span id="image-state">—</span></div></section>
+      <section class="drive card" aria-label="Fahrt bedienen"><p class="eyebrow">DEIN VERSUCH</p><h2 id="drive-title">Verbindung aufbauen</h2><p id="reason" role="status" aria-live="polite">Das Fahrprogramm wird abgefragt.</p><p id="task-error" class="notice" role="alert" hidden></p><div class="buttons"><button id="start" class="primary" disabled>Fahrt starten</button><button id="stop" class="stop">Stopp</button></div><p class="hint">Start lädt eure Aufgabendatei neu. Nach einem Verbindungsabbruch bewusst neu starten.</p><div class="divider"></div><dl><dt>Aufgabendatei</dt><dd id="task">—</dd><dt>Pico-Zustand</dt><dd id="pico-state">—</dd><dt>Rückmeldung</dt><dd id="flags">—</dd><dt>Bedienung</dt><dd id="owner">—</dd></dl><p id="notice" class="notice" role="alert" hidden></p></section>
+    </div>
+    <section class="metrics" aria-label="Messwerte">
+      <article class="card metric"><h2>Abstand zum Ziel</h2><strong id="target">—</strong><span>Meter · Kameraschätzung</span></article>
+      <article class="card metric"><h2>Frontabstand</h2><strong id="front">—</strong><span id="front-note">Warte auf Messwert</span></article>
+      <article class="card metric"><h2>Geschwindigkeit</h2><strong id="speed">—</strong><span>m/s · Mittelwert der Räder</span></article>
+      <article class="card metric"><h2>Regelzustand</h2><strong id="controller">—</strong><span id="command">Sollwerte werden geladen</span></article>
+    </section>
+    <section class="card detail"><div class="card-head"><h2>Am Fahrzeug gemessen</h2><span id="status-age">Noch kein Pico-Status</span></div><dl class="telemetry"><div><dt>Rad links</dt><dd id="left">—</dd></div><div><dt>Rad rechts</dt><dd id="right">—</dd></div><div><dt>Encoder links / rechts</dt><dd id="ticks">—</dd></div><div><dt>Motorspannung</dt><dd id="voltage">—</dd></div></dl></section>
+    <footer><span>Start und Stopp bedienen denselben Prozess wie das Pi-Terminal.</span><a href="/status" target="_blank" rel="noopener">Status als JSON</a><span>Der Not-Aus am Fahrzeug wirkt unabhängig vom Browser.</span></footer>
+  </main>
+</body>
+</html>

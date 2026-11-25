@@ -1,0 +1,4 @@
+-e ./fahrzeug/pi-starter[laptop]
+numpy>=1.24,<3
+opencv-python-headless==5.0.0.93
+pyserial==3.5

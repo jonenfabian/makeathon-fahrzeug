@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Follow-Me · Lernlabor</title>
+  <link rel="stylesheet" href="/style.css">
+  <script type="importmap">{"imports":{"three":"/vendor/three.module.js"}}</script>
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="/"><span class="brand-icon">fm</span> Follow-Me <span class="divider"></span><span class="brand-sub">Lernlabor</span></a><span class="mode"><i></i> Simulation auf deinem Rechner</span></header>
+  <main>
+    <div class="intro"><div><p class="eyebrow">MAKEATHON BREMERHAVEN · 03.–05. DEZEMBER</p><h1>Aus Code wird Bewegung.</h1><p>Experimentiere mit deinem Roboter. Beobachte, was seine Kamera wirklich sieht.</p></div><div class="experiment"><span>VERSUCHSZEIT</span><b id="elapsed">00:00</b></div></div>
+    <div class="workspace">
+      <section class="world-panel panel" aria-label="Virtueller Parcours">
+        <div class="panel-top"><div><span class="live-dot"></span><b>Dein Parcours</b><span class="muted">1 Raster = 1 Meter</span></div><button id="view-reset" class="quiet">Ansicht zentrieren</button></div>
+        <div id="world"><div class="scene-loading" id="scene-loading">Fahrzeugmodell wird geladen …</div><div class="scene-key"><span><i class="key-robot"></i> Fahrzeug</span><span><i class="key-person"></i> Zielperson · ID 300</span><span><i class="key-path"></i> Gefahrener Weg</span></div><p class="orbit-hint">Ziehen zum Drehen · Scrollen zum Zoomen</p></div>
+        <div class="controlbar"><div class="run-status"><i id="run-dot"></i><span id="run-label">Verbinden …</span></div><div class="buttons"><button id="stop" class="stop">■ Stopp</button><button id="start" class="primary" disabled>▶ Versuch starten</button></div></div>
+      </section>
+      <aside class="exercise panel">
+        <p class="eyebrow">DEINE NÄCHSTE ENTDECKUNG</p><h2 id="exercise-title">Der Person folgen</h2>
+        <label class="field-label" for="scenario">Szene auswählen</label><select id="scenario"><option value="folgen">01 · Der Person folgen</option><option value="hindernis">02 · Eine Kiste im Weg</option><option value="schilder">03 · Person oder Schild?</option><option value="schilderweg">04 · Schilder am Weg</option></select>
+        <p id="exercise-text">Lerne den Folgeregler kennen: Wie reagiert das Fahrzeug, wenn die Person losgeht oder stehen bleibt?</p>
+        <ol class="steps"><li><span>01</span><div><b>Starte den Versuch</b><p>Der Roboter sucht den Personenmarker.</p></div></li><li><span>02</span><div><b>Vergleiche Bild und Fahrt</b><p>Abstand und Richtung bestimmen die Bewegung.</p></div></li><li><span>03</span><div><b>Verändere eine Bedingung</b><p>Verdecke den Marker oder ergänze eine Kiste.</p></div></li></ol>
+        <label class="toggle"><span>Personenmarker verdecken</span><input id="hidden" type="checkbox"></label>
+        <div class="box-editor"><b>Eine eigene Kiste platzieren</b><p>Stoppe den Versuch und wähle eine Position in Metern.</p><div class="coordinate-fields"><label>x <input id="box-x" type="number" min="-8" max="8" step=".1" value="2.4"></label><label>y <input id="box-y" type="number" min="-8" max="8" step=".1" value="0"></label><button id="add-box" class="secondary" title="Kiste an dieser Position platzieren">+ Kiste</button></div></div>
+        <button id="reset" class="reset">↺ Szene zurücksetzen</button>
+      </aside>
+      <section class="camera-panel panel"><div class="panel-top"><b>Durch die Kamera</b><span id="image-age" class="pill">Wartet auf Bild</span></div><div class="camera-image"><img id="camera" alt="Virtuelles Kamerabild des Fahrzeugs mit erkannten AprilTags"></div><div class="camera-caption"><span>Grüner Rahmen = erkannter AprilTag</span><b id="tags">Noch kein Marker</b></div></section>
+      <section class="telemetry panel"><div class="panel-top"><b>Was der Roboter daraus macht</b><span class="pill" id="pico">–</span></div><div class="metric-grid"><div class="metric"><span>ABSTAND ZUM ZIEL</span><strong id="target-distance">–<small> m</small></strong></div><div class="metric"><span>FRONTABSTAND</span><strong id="front-distance">–<small> m</small></strong></div><div class="metric"><span>GESCHWINDIGKEIT</span><strong id="speed">0.00<small> m/s</small></strong></div><div class="metric"><span>REGELZUSTAND</span><strong class="state-value" id="controller">SUCHE</strong></div></div><div class="reason" id="reason" role="status">Die Simulation wird vorbereitet.</div><details><summary>Messwerte &amp; eigener Python-Code</summary><dl class="details-values"><dt>Rad links / rechts</dt><dd id="wheels">–</dd><dt>Encoder links / rechts</dt><dd id="encoders">–</dd><dt>Sollwert v / ω</dt><dd id="command">–</dd><dt>Aktive Aufgabe</dt><dd id="task">Folgeregler</dd></dl><p>Erweitere <code>fahrzeug/pi-starter/beispiele/stoppschild.py</code> im Editor und starte das Lernlabor im Projektordner damit:</p><pre>.venv/bin/python start.py \
+  --aufgabe fahrzeug/pi-starter/beispiele/stoppschild.py \
+  --szenario schilder</pre><p>Unter Windows steht <code>.\.venv\Scripts\python.exe</code> statt <code>.venv/bin/python</code>. Dieselbe Aufgabendatei übertragt ihr später nach der Startkarte Fahrzeug auf das Fahrzeug.</p></details></section>
+    </div>
+    <footer><span>Dein Code. Derselbe Detektor. Derselbe Firmwarekern.</span><span>Ideale Kamera und ebener Boden · Reales Fahrverhalten vor Ort prüfen</span></footer>
+  </main>
+  <div id="toast" role="alert" hidden></div><script type="module" src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+* text=auto eol=lf
+*.glb binary
+*.stl binary
+*.STL binary
+mcu_sim binary
+*.exe binary
+**/vendor/** -whitespace

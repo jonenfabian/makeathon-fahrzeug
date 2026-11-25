@@ -1,0 +1,24 @@
+{
+  "source": "cad/params.py + cad/baugruppe_klartext.glb",
+  "model_sha256": "df4dfff6d18283d0adb5fafc2e8773bff5123c36279d562fb1b786060fe01106",
+  "model_scale": 0.001,
+  "footprint": {
+    "rear_m": 0.072,
+    "front_m": 0.15660000610351563,
+    "half_width_m": 0.0915
+  },
+  "camera_x_m": 0.12,
+  "camera_z_m": 0.252,
+  "tof_x_m": 0.147,
+  "tof_z_m": 0.134,
+  "ultrasonic": {
+    "x_m": 0.135,
+    "y_m": 0.055,
+    "z_m": 0.1265,
+    "yaw_deg": 45.0,
+    "cone_deg": 15.0,
+    "min_m": 0.02,
+    "max_m": 4.5
+  },
+  "assumptions": "Waagerechte ideale Kamera; Linse in Mastmitte; Kamera-/ToF-Höhe nominal, keine Kalibrierung; Ultraschalllage geplant, Winkel noch nicht gemessen"
+}

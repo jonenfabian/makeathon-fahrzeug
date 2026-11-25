@@ -1,0 +1,11 @@
+.venv/
+runtime-built/
+__pycache__/
+*.pyc
+*.egg-info/
+*.obj
+*.o
+*.pdb
+fahrzeug/firmware/host_sim/mcu_sim
+fahrzeug/firmware/host_sim/mcu_sim.exe
+kinova/

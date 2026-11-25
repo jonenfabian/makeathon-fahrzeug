@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "followme"
+version = "0.1.0"
+description = "Follow-me-Bausatz: Pi-Software (Makeathon Dez. 2026)"
+requires-python = ">=3.10"
+# Laufzeit auf dem Pi. Picamera2 kommt aus Raspberry Pi OS; OpenCV im Standard
+# ebenfalls, im Minimalprofil über das Headless-Extra — venv mit
+# --system-site-packages anlegen, siehe docs/06-software.md.
+dependencies = ["numpy", "pyserial"]
+
+[project.optional-dependencies]
+laptop = ["opencv-python-headless"]   # Apache-2.0
+headless = ["opencv-python-headless"] # Apache-2.0; schlanker Pi ohne OpenCV-GUI-Systempakete
+person = ["mediapipe"]                # Apache-2.0
+coral = ["ai-edge-litert==2.3.0; platform_system == 'Linux'"] # Apache-2.0; ARM64/Python 3.13
+audit = ["Pillow==12.0.0", "packaging==26.3"] # MIT-CMU / Apache-2.0 OR BSD-2-Clause; nur Offline-Audit
+dev = ["pytest", "ruff", "matplotlib"]
+
+[tool.setuptools]
+packages = ["followme"]
+
+[tool.setuptools.package-data]
+followme = ["sim_static/*", "sim_static/vendor/*", "hardware_static/*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
