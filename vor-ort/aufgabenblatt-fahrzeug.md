@@ -71,7 +71,9 @@ auf `makeathon_aufgabe.py`. Der Pi-Startbefehl der Startkarte bleibt gleich.
 
 ## F4 Eine Erweiterung wählen
 
-Wählt nach F1–F3 eine Erweiterung und legt vor dem Programmieren ein Erfolgskriterium fest:
+Wählt nach F1–F3 eine Erweiterung und legt vor dem Programmieren ein Erfolgskriterium fest. Weitere Ideen,
+etwa Verkehrsschilder mit Stopp, Langsam, Links und Rechts, einen Parkplatz anfahren oder eine Kolonnenfahrt,
+stehen in der [Ideenliste](ideen.md).
 
 | Erweiterung | Euer Ergebnis |
 | --- | --- |
