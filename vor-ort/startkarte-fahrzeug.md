@@ -47,8 +47,8 @@ Prüft Fahrt, Kamerabild und Geschwindigkeit. Danach den Versuch stoppen.
 
 ## 2 Datei übertragen und Fahrprogramm starten
 
-Stellt Montage und Verdrahtung anhand der Anleitung am Arbeitsplatz fertig und prüft den
-Aufbau. Die vorbereitete SD-Karte enthält Laufzeit, Grundsoftware und Fahrzeugkonfiguration.
+Baut zuerst das Oberdeck nach der [Oberdeck-Bildanleitung](Oberdeck_Bildanleitung.pdf) auf, im Repository unter
+`vor-ort/Oberdeck_Bildanleitung.pdf` (Schritte 01–07 Montieren, 08–09 Fahrtest), und prüft den Aufbau. Die vorbereitete SD-Karte enthält Laufzeit, Grundsoftware und Fahrzeugkonfiguration.
 Verwendet eure Geräteangaben anstelle der großgeschriebenen Platzhalter.
 Hinweise zu Akku und Laden stehen in [Start und Aufgaben vor Ort](README.md#akku-und-laden).
 
@@ -65,6 +65,8 @@ Hostschlüssel mit den Geräteangaben ab. Gebt das Passwort in der Passwortabfra
 **Ab jetzt im SSH-Terminal auf dem Pi.**
 
 > **Vor der ersten Fahrt** (einmal je Fahrzeug)
+>
+> Habt ihr die Seiten 08–09 der Oberdeck-Bildanleitung schon erledigt, ist dieser Kasten erfüllt.
 >
 > 1. Fahrzeug aufbocken, beide Antriebsräder frei. Not-Aus entriegelt, Frontsensor mit freier Sicht.
 > 2. `~/fm-status --sekunden 5`: Zustand `STANDBY`, Flags `-`, beide Räder `+0 mm/s`.
