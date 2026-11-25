@@ -20,6 +20,7 @@ Geschwindigkeit, Beschleunigung und stoppt vor Hindernissen vorn, egal was eure 
 | Parkplatz anfahren | Ein aufrechtes Schild ansteuern und davor anhalten | Der Abstandssensor stoppt bei etwa 40 cm. Plant euren Haltepunkt davor |
 | Eigene Anzeige | Ziel-ID, Bildalter, Geschwindigkeit und Frontwert anzeigen | Unbekannte Werte verständlich kennzeichnen |
 | Fahrgenauigkeit messen | Ein Quadrat fahren und den Endfehler messen | Die Odometrie driftet. Mit Maßband vergleichen |
+| Lieferfahrt | Eine Station auswählen, etwa Schild 103, und auf freier Fläche bis davor fahren | Station als Schild-ID in der Aufgabendatei festlegen. Die Station muss sichtbar sein, es gibt keine Karte und keine Wegplanung |
 
 ## Mit mehreren Fahrzeugen
 
@@ -27,6 +28,7 @@ Geschwindigkeit, Beschleunigung und stoppt vor Hindernissen vorn, egal was eure 
 | --- | --- | --- |
 | Kolonnenfahrt | Das erste Fahrzeug folgt der Person, die weiteren dem Fahrzeug-Marker davor (IDs 2, 4, 6, 8) | Erst Erkennungsabstand und Bremsweg messen. Eigener Stopp bei Zielverlust |
 | Choreografie | Mehrere Fahrzeuge starten gemeinsam kurze Bewegungsfolgen | Ein Takt über WLAN ist nie ganz gleich. Kurze, langsame Folgen |
+| Dashboard erweitern | Eine eigene Übersicht auf dem Laptop zeigt die Messwerte mehrerer Fahrzeuge nebeneinander | Euer Programm liest `http://PI_ADRESSE:8000/status` (Messwerte als JSON) und `/stream` (Kamerabild). Start und Stopp bleiben im Fahrzeug-Dashboard |
 
 Auf jeder Fahrfläche ist nur ein Personenmarker ID 300 sichtbar. Sonst folgt ein Fahrzeug der Person
 eines anderen Teams.
