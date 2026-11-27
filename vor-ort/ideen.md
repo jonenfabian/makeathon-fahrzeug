@@ -38,6 +38,7 @@ eines anderen Teams.
 | Idee | Ergebnis | Voraussetzung |
 | --- | --- | --- |
 | LED-Anzeige | Zustand, Richtung oder Abstand mit den LED-Streifen zeigen | LED-Bonus in der [Oberdeck-Bildanleitung](Oberdeck_Bildanleitung.pdf) |
+| Schwenkrad statt Kugelrolle | Ruhigeres Kamerabild beim Fahren, wenn der Hallenboden uneben ist | Schwenkräder und Druckteile bei der Orga. Erkennung beim Fahren vorher und nachher vergleichen |
 | Hindernis umfahren oder an einer Wand entlangfahren | Seitlich messen und ausweichen | Freiwillige Zusatzoption Ultraschall, siehe Aufgabenblatt. Sensoren bei der Orga |
 
 ## Mit einem Coding Agent arbeiten
